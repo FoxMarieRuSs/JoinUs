@@ -147,9 +147,42 @@ function renderLoggedInHeader(username) {
     <main>
       <h1>Добро пожаловать в <span class="logo-blue">JoinUs!</span></h1>
       <p>Социальная сеть нового поколения — общайтесь, находите друзей, делитесь своими постами и многое другое!</p>
+      <p class="subtitle">Твоё пространство для настоящего общения!</p>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon">👥</div>
+          </div>
+          <h3 class="feature-title">Находи единомышленников</h3>
+          <p class="feature-desc">Создавай свой аккаунт и находи людей с такими же интересами, что и у тебя!</p>
+          <div class="feature-wave"></div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon">🎨</div>
+          </div>
+          <h3 class="feature-title">Выражай себя</h3>
+          <p class="feature-desc">Посты про истории, интересы и многое другое!</p>
+          <div class="feature-wave"></div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <div class="feature-icon">🔒</div>
+          </div>
+          <h3 class="feature-title">Полная приватность</h3>
+          <p class="feature-desc">Гибкие настройки видимости для каждого поста и категории контактов</p>
+          <div class="feature-wave"></div>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img src="https://static.tildacdn.com/tild3939-3761-4033-b336-373461383139/fcd845f3188a7428e060.jpg" alt="Люди общаются в социальной сети">
+      </div>
     </main>
   `;
-
+  
   document.getElementById("logoutButton").addEventListener("click", () => {
     localStorage.removeItem("currentUser");
     location.reload();
@@ -177,4 +210,3 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-  
