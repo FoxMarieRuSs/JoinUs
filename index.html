@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тест!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JoinUs - Социальная сеть</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Тут будет соц сеть!</h1>
+  <header>
+    <div class="logo">JoinUs</div>
+    <nav>
+      <button onclick="alert('Лента еще в разработке')">Лента</button>
+      <button onclick="alert('Чат еще в разработке')">Чат</button>
+      <button onclick="alert('Профиль еще в разработке')">Профиль</button>
+      <button id="authButton">Зарегаться/Войти в аккаунт</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Добро пожаловать в <span style="color: #3b82f6;">JoinUs!</span></h1>
+    <p>Социальная сеть нового поколения — общайтесь, находите друзей с которыми будете проводить много времени, делитесь своими постами о ваших интересах и многое другое!</p>
+  </main>
+
+  <script src="js/auth.js"></script>
 </body>
 </html>
+
+
