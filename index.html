@@ -21,8 +21,21 @@
     <h1>Добро пожаловать в <span style="color: #3b82f6;">JoinUs!</span></h1>
     <p>Социальная сеть нового поколения — общайтесь, находите друзей с которыми будете проводить много времени, делитесь своими постами о ваших интересах и многое другое!</p>
   </main>
+  
+  <section id="feed" style="display: none;">
+    <div class="feed-container">
+      <div class="create-post">
+        <textarea id="postText" placeholder="Что у вас нового?"></textarea>
+        <input type="file" id="postImage" accept="image/*" style="display: none;">
+        <button id="addImageBtn">📷 Добавить фото</button>
+        <button id="publishPostBtn">Опубликовать</button>
+      </div>
+      <div class="posts-list" id="postsList"></div>
+    </div>
+  </section>
 
   <script src="js/auth.js"></script>
+  <script type="module" src="js/feed.js"></script>
 </body>
 </html>
 
